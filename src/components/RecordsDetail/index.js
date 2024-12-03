@@ -21,14 +21,6 @@ import { appendParams, dateString, hasAccessOrUse, noteText, noteTextByType } fr
 import { isItemSaved } from '../MyListHelpers'
 import './styles.scss'
 
-const flattenObject = (obj, flattened = []) => {
-  flattened.push(obj.title);
-  if (obj.child) {
-    flattenObject(obj.child, flattened)
-  }
-  return flattened
-}
-
 const FoundInItem = ({ className, item, params, topLevel }) => (
   <>
     <li className={className}>
@@ -161,17 +153,6 @@ const RecordsDetail = props => {
     props.item.uri && props.item.uri.split('/')[props.item.uri.split('/').length - 1]
   )
 
-  /** Returns a citation string */
-  const dates = props.item.dates && props.item.dates.map(d => d.expression).join(', ')
-  const citation = (
-    [...new Set([props.item.title, dates])]
-      .concat(flattenObject(props.ancestors))
-      .concat(t({ comment: 'Institution name for citation', message: 'Rockefeller Archive Center' }))
-      .concat(window.location.origin + window.location.pathname)
-      .filter(n => n)
-      .join('; ')
-  )
-
   const handleCitationButtonClick = () => {
     setCitationCopied(true)
     setTimeout(() => {setCitationCopied(false)}, '6000')
@@ -214,7 +195,7 @@ const RecordsDetail = props => {
         null }
         <Trans comment='Button to copy citation text'>
         <button className='btn btn--sm btn--orange btn--detail mr-10 mb-10 p-8'
-          onClick={() => {navigator.clipboard.writeText(citation); handleCitationButtonClick()}}>
+          onClick={() => {navigator.clipboard.writeText(props.citation); handleCitationButtonClick()}}>
           Cite<MaterialIcon icon='edit' className='material-icon--space-before'/>
         </button>
         </Trans>

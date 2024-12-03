@@ -109,7 +109,7 @@ msgid "{source, select, null {Source: Rockefeller Archive Center} other {Source:
 msgstr "{source, select, null {Kaynak: Rockefeller Arşiv Merkezi} other {Kaynak: {source}}}"
 
 #. Message to go back to previous search
-#: src/components/RecordsDetail/index.js:193
+#: src/components/RecordsDetail/index.js:174
 msgid "<0/>Back to Search"
 msgstr "<0/>aramaya geri̇ dön"
 
@@ -164,12 +164,12 @@ msgid "<0><1>Search Results</1></0>"
 msgstr "<0><1>Arama Sonuçları</1></0>"
 
 #. Confirmation message when citation copied
-#: src/components/RecordsDetail/index.js:209
+#: src/components/RecordsDetail/index.js:190
 msgid "<0>Citation information copied to clipboard.</0>"
 msgstr "<0>Alıntı bilgileri panoya kopyalandı.</0>"
 
 #. Button to copy citation text
-#: src/components/RecordsDetail/index.js:215
+#: src/components/RecordsDetail/index.js:196
 msgid "<0>Cite<1/></0>"
 msgstr "<0>Alıntıla yapın<1/></0>"
 
@@ -264,7 +264,7 @@ msgid "<0>View Online<1/></0>"
 msgstr "<0>Çevrimiçi Görüntüle<1/></0>"
 
 #. Buttons for online records
-#: src/components/RecordsDetail/index.js:223
+#: src/components/RecordsDetail/index.js:204
 msgid "<0>View Online<1/></0><2>Download <3/></2>{0}"
 msgstr "<0>Çevrimiçi Görüntüle<1/></0><2>İndi̇r <3/></2>{0}"
 
@@ -284,7 +284,7 @@ msgid "255 characters maximum"
 msgstr "En fazla 255 karakter"
 
 #. About minimap message
-#: src/components/RecordsDetail/index.js:188
+#: src/components/RecordsDetail/index.js:169
 msgid "about minimap"
 msgstr "minimap hakkında"
 
@@ -435,7 +435,7 @@ msgid "Deselect all items"
 msgstr "Tum ogelerin secimini kaldiriniz."
 
 #. Update message for selected record
-#: src/components/PageRecords/index.js:118
+#: src/components/PageRecords/index.js:119
 msgid "Details under heading 1 have been updated to describe the selected records titled {0}"
 msgstr "Başlık 1 altındaki detaylar {0} başlıklı seçilmiş kayıtları tanımlayacak şekilde güncellenmiştir"
 
@@ -514,12 +514,12 @@ msgid "Format"
 msgstr "Biçim"
 
 #. Panel Format message
-#: src/components/RecordsDetail/index.js:72
+#: src/components/RecordsDetail/index.js:64
 msgid "Formats"
 msgstr "Formatlar"
 
 #. Panel Found In message
-#: src/components/RecordsDetail/index.js:89
+#: src/components/RecordsDetail/index.js:81
 msgid "Found In"
 msgstr "İçeri̇si̇nde Bulundu"
 
@@ -696,7 +696,7 @@ msgstr "Minimap"
 #. Reading Room Actual Hours
 #: src/components/Footer/index.js:49
 msgid "Monday-Friday<0/>9:30 a.m. to 5:00 p.m.<1/>"
-msgstr ""Pazartesi-Cuma<0/>9:30 - 17:00 arası.<1/>""
+msgstr "\"Pazartesi-Cuma<0/>9:30 - 17:00 arası.<1/>\""
 
 #. Message shown on button within Dropdown list
 #. Message shown on button within the Header
@@ -742,7 +742,7 @@ msgstr "e-posta açar"
 #: src/components/ModalMyList/index.js:520
 #: src/components/ModalMyList/index.js:583
 #: src/components/PageDigitalObject/index.js:112
-#: src/components/RecordsDetail/index.js:229
+#: src/components/RecordsDetail/index.js:210
 msgid "opens in a new window"
 msgstr "yeni bir pencerede açılır"
 
@@ -888,11 +888,6 @@ msgstr "Kopya Talep Et"
 msgid "Request in Reading Room"
 msgstr "Okuma odası için talep"
 
-#. Institution name for citation
-#: src/components/RecordsDetail/index.js:169
-msgid "Rockefeller Archive Center"
-msgstr "Rockefeller Arşiv Merkezi"
-
 #. Primary Title
 #: src/components/Footer/index.js:14
 msgid "Rockefeller<0/>Archive Center"
@@ -1013,7 +1008,7 @@ msgid "Sign in to RACcess"
 msgstr "RACcess'te oturum açın"
 
 #. Panel Extent Size message
-#: src/components/RecordsDetail/index.js:50
+#: src/components/RecordsDetail/index.js:42
 msgid "Size"
 msgstr "Boyut"
 

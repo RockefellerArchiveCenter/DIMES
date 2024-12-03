@@ -109,7 +109,7 @@ msgid "{source, select, null {Source: Rockefeller Archive Center} other {Source:
 msgstr "{source, select, null {출처: 록펠러 아카이브 센터} other {출처: {source}}}"
 
 #. Message to go back to previous search
-#: src/components/RecordsDetail/index.js:193
+#: src/components/RecordsDetail/index.js:174
 msgid "<0/>Back to Search"
 msgstr "<0/>검색으로 돌아가기"
 
@@ -164,12 +164,12 @@ msgid "<0><1>Search Results</1></0>"
 msgstr "<0><1>검색 결과</1></0>"
 
 #. Confirmation message when citation copied
-#: src/components/RecordsDetail/index.js:209
+#: src/components/RecordsDetail/index.js:190
 msgid "<0>Citation information copied to clipboard.</0>"
 msgstr "<0>인용 정보가 클립보드에 복사되었습니다.</0>"
 
 #. Button to copy citation text
-#: src/components/RecordsDetail/index.js:215
+#: src/components/RecordsDetail/index.js:196
 msgid "<0>Cite<1/></0>"
 msgstr "<0>인용<1/></0>"
 
@@ -264,7 +264,7 @@ msgid "<0>View Online<1/></0>"
 msgstr "<0>온라인 보기<1/></0>"
 
 #. Buttons for online records
-#: src/components/RecordsDetail/index.js:223
+#: src/components/RecordsDetail/index.js:204
 msgid "<0>View Online<1/></0><2>Download <3/></2>{0}"
 msgstr "<0>온라인 보기<1/></0><2>다운로드 <3/></2>{0}"
 
@@ -284,7 +284,7 @@ msgid "255 characters maximum"
 msgstr "최대 255자"
 
 #. About minimap message
-#: src/components/RecordsDetail/index.js:188
+#: src/components/RecordsDetail/index.js:169
 msgid "about minimap"
 msgstr "미니맵 정보"
 
@@ -435,7 +435,7 @@ msgid "Deselect all items"
 msgstr "모든 항목 선택 해제"
 
 #. Update message for selected record
-#: src/components/PageRecords/index.js:118
+#: src/components/PageRecords/index.js:119
 msgid "Details under heading 1 have been updated to describe the selected records titled {0}"
 msgstr "제목 1 아래의 세부 정보가 {0}이라는 제목의 선택된 레코드를 설명하도록 업데이트되었습니다"
 
@@ -514,12 +514,12 @@ msgid "Format"
 msgstr "형식"
 
 #. Panel Format message
-#: src/components/RecordsDetail/index.js:72
+#: src/components/RecordsDetail/index.js:64
 msgid "Formats"
 msgstr "형식"
 
 #. Panel Found In message
-#: src/components/RecordsDetail/index.js:89
+#: src/components/RecordsDetail/index.js:81
 msgid "Found In"
 msgstr "발견 장소"
 
@@ -742,7 +742,7 @@ msgstr "이메일 열기"
 #: src/components/ModalMyList/index.js:520
 #: src/components/ModalMyList/index.js:583
 #: src/components/PageDigitalObject/index.js:112
-#: src/components/RecordsDetail/index.js:229
+#: src/components/RecordsDetail/index.js:210
 msgid "opens in a new window"
 msgstr "새 창에서 열기"
 
@@ -888,11 +888,6 @@ msgstr "복사 요청"
 msgid "Request in Reading Room"
 msgstr "열람실에서 요청하기"
 
-#. Institution name for citation
-#: src/components/RecordsDetail/index.js:169
-msgid "Rockefeller Archive Center"
-msgstr "록펠러 아카이브 센터"
-
 #. Primary Title
 #: src/components/Footer/index.js:14
 msgid "Rockefeller<0/>Archive Center"
@@ -1013,7 +1008,7 @@ msgid "Sign in to RACcess"
 msgstr "RACcess에 로그인"
 
 #. Panel Extent Size message
-#: src/components/RecordsDetail/index.js:50
+#: src/components/RecordsDetail/index.js:42
 msgid "Size"
 msgstr "크기"
 
