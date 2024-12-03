@@ -23,6 +23,7 @@ const PageRecords = ({ isDesktop, isMobile, myListCount, toggleInList }) => {
   const [backendError, setBackendError] = useState({})
   const [children, setChildren] = useState([])
   const [childrenUri, setChildrenUri] = useState('')
+  const [citation, setCitation] = useState('')
   const [downloadSize, setDownloadSize] = useState('')
   const [found, setFound] = useState(true)
   const [hasSeenMinimapIntro, setHasSeenMinimapIntro] = useState(true)
@@ -129,6 +130,17 @@ const PageRecords = ({ isDesktop, isMobile, myListCount, toggleInList }) => {
     }
   }, [itemUri])
 
+  /** Fetches citation when itemUri changes */
+  useEffect(() => {
+    if (itemUri) {
+      axios
+        .get(`${itemUri}/citation`)
+        .then(res => {
+          setCitation(res.data)
+        })
+    }
+  }, [itemUri])
+
  /** Fetches ancestors when itemUri changes */
   useEffect(() => {
     if (itemUri) {
@@ -215,6 +227,7 @@ const PageRecords = ({ isDesktop, isMobile, myListCount, toggleInList }) => {
           toggleIsContentShown={toggleIsContentShown} />
         <RecordsDetail
           ancestors={ancestors}
+          citation={citation}
           downloadSize={downloadSize}
           isAncestorsLoading={isAncestorsLoading}
           isContentShown={isContentShown}

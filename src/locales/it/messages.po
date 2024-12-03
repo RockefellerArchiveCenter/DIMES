@@ -109,7 +109,7 @@ msgid "{source, select, null {Source: Rockefeller Archive Center} other {Source:
 msgstr "{source, select, null {Fonte: Rockefeller Archive Center} other {Fonte: {source}}}"
 
 #. Message to go back to previous search
-#: src/components/RecordsDetail/index.js:193
+#: src/components/RecordsDetail/index.js:174
 msgid "<0/>Back to Search"
 msgstr "<0/>Torna alla ricerca"
 
@@ -164,12 +164,12 @@ msgid "<0><1>Search Results</1></0>"
 msgstr "<0><1>Risultati</1></0>"
 
 #. Confirmation message when citation copied
-#: src/components/RecordsDetail/index.js:209
+#: src/components/RecordsDetail/index.js:190
 msgid "<0>Citation information copied to clipboard.</0>"
 msgstr "<0>Informazioni sulla citazione copiate negli appunti.</0>"
 
 #. Button to copy citation text
-#: src/components/RecordsDetail/index.js:215
+#: src/components/RecordsDetail/index.js:196
 msgid "<0>Cite<1/></0>"
 msgstr "<0>Cita<1/></0>"
 
@@ -264,7 +264,7 @@ msgid "<0>View Online<1/></0>"
 msgstr "<0>Visualizza online<1/></0>"
 
 #. Buttons for online records
-#: src/components/RecordsDetail/index.js:223
+#: src/components/RecordsDetail/index.js:204
 msgid "<0>View Online<1/></0><2>Download <3/></2>{0}"
 msgstr "<0>Visualizza online<1/></0><2>Scarica  <3/></2>{0}"
 
@@ -284,7 +284,7 @@ msgid "255 characters maximum"
 msgstr "Massimo 255 caratteri"
 
 #. About minimap message
-#: src/components/RecordsDetail/index.js:188
+#: src/components/RecordsDetail/index.js:169
 msgid "about minimap"
 msgstr "Informazioni sulla minimappa"
 
@@ -435,7 +435,7 @@ msgid "Deselect all items"
 msgstr "Deselezionare tutti gli elementi"
 
 #. Update message for selected record
-#: src/components/PageRecords/index.js:118
+#: src/components/PageRecords/index.js:119
 msgid "Details under heading 1 have been updated to describe the selected records titled {0}"
 msgstr "I dettagli della rubrica 1 sono stati aggiornati per descrivere i record selezionati intitolati {0}"
 
@@ -514,12 +514,12 @@ msgid "Format"
 msgstr "Formato"
 
 #. Panel Format message
-#: src/components/RecordsDetail/index.js:72
+#: src/components/RecordsDetail/index.js:64
 msgid "Formats"
 msgstr "Formati"
 
 #. Panel Found In message
-#: src/components/RecordsDetail/index.js:89
+#: src/components/RecordsDetail/index.js:81
 msgid "Found In"
 msgstr "Contenuto in"
 
@@ -742,7 +742,7 @@ msgstr "apre l'e-mail"
 #: src/components/ModalMyList/index.js:520
 #: src/components/ModalMyList/index.js:583
 #: src/components/PageDigitalObject/index.js:112
-#: src/components/RecordsDetail/index.js:229
+#: src/components/RecordsDetail/index.js:210
 msgid "opens in a new window"
 msgstr "si apre in una nuova finestra"
 
@@ -888,11 +888,6 @@ msgstr "Richiedi delle riproduzioni"
 msgid "Request in Reading Room"
 msgstr "Richiedi in Sala di consultazione"
 
-#. Institution name for citation
-#: src/components/RecordsDetail/index.js:169
-msgid "Rockefeller Archive Center"
-msgstr "Rockefeller Archive Center"
-
 #. Primary Title
 #: src/components/Footer/index.js:14
 msgid "Rockefeller<0/>Archive Center"
@@ -1013,7 +1008,7 @@ msgid "Sign in to RACcess"
 msgstr "Accedi a RACcess"
 
 #. Panel Extent Size message
-#: src/components/RecordsDetail/index.js:50
+#: src/components/RecordsDetail/index.js:42
 msgid "Size"
 msgstr "Dimensioni"
 
