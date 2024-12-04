@@ -4,6 +4,17 @@ A React web application which provides the front-end user interface for the onli
 
 DIMES is part of [Project Electron](https://github.com/RockefellerArchiveCenter/project_electron), an initiative to build sustainable, open and user-centered infrastructure for the archival management of digital records at the [Rockefeller Archive Center](http://rockarch.org/).
 
+## Configuring DIMES
+In order to support a variety of use cases, there are several configuration options in DIMES which can be activated or deactivated as desired.
+
+### Aeon Reading Room Integration
+
+Available dates for reading rooms can be pulled from Aeon via the request broker by setting the `REACT_APP_ENABLE_READING_ROOM_SELECT` environment variable. Not setting this environment variable or leaving it blank will disable this feature. Setting this environment variable to any string will activate it.
+
+### Duplication Request Limits
+
+It is possible to limit the number of duplication requests a user can submit at once by setting the `REACT_APP_DUPLICATION_REQUEST_LIMIT` environment variable.  Not setting this environment variable or leaving it blank will disable this feature.
+
 ## Local Development
 
 Install [git](https://git-scm.com/) and clone the repository
@@ -81,14 +92,6 @@ DIMES uses a [macro implementation](https://lingui.dev/guides/message-extraction
 4. Run `$ yarn lingui-compile` to update the locale files into Javascript files which are used by the application
   to present translated strings.
 5. Commit updated code to the GitHub repository.
-
-### Aeon Reading Room Integration
-
-Available dates for reading rooms can be pulled from Aeon via the request broker by setting the `REACT_APP_ENABLE_READING_ROOM_SELECT` environment variable. Not setting this environment variable or leaving it blank will disable this feature. Setting this environment variable to any string will activate it.
-
-### Duplication Request Limits
-
-It is possible to limit the number of duplication requests a user can submit at once by setting the `REACT_APP_DUPLICATION_REQUEST_LIMIT` environment variable.  Not setting this environment variable or leaving it blank will disable this feature.
 
 ## License
 
