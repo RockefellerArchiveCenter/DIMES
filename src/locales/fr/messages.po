@@ -48,7 +48,7 @@ msgstr "{0, select, true {Minimap} other {Introduction de la carte minimale}}"
 msgid "{0, select, true {Request {1} Items} other {Request {2} Item}}"
 msgstr "{0, select, true {Demander {1} éléments} other {Demander {2} élément}}"
 
-#: src/components/RecordsContent/index.js:232
+#: src/components/RecordsContent/index.js:234
 msgid "{0, select, true {View} other {View Online}}"
 msgstr "{0, select, true {Voir} other {Voir en ligne}}"
 
@@ -214,7 +214,7 @@ msgid "<0>Last requested on: {0}</0>"
 msgstr "<0>Dernière demande le : {0}</0>"
 
 #. Records content is loading
-#: src/components/RecordsContent/index.js:401
+#: src/components/RecordsContent/index.js:403
 msgid "<0>Loading</0>"
 msgstr "<0>Chargement</0>"
 
@@ -385,7 +385,7 @@ msgstr "Fermer"
 #. switcher label text content
 #. Collection Content title
 #: src/components/ContextSwitcher/__tests__/ContextSwitcher.test.js:20
-#: src/components/RecordsContent/index.js:405
+#: src/components/RecordsContent/index.js:407
 msgid "Collection Content"
 msgstr "Contenu de la collection"
 
