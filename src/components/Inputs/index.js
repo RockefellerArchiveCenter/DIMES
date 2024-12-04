@@ -4,7 +4,6 @@ import DatePicker from 'react-datepicker'
 import {useSelect} from 'downshift'
 import MaterialIcon from '../MaterialIcon'
 import classnames from 'classnames'
-import { t } from '@lingui/macro'
 import "react-datepicker/dist/react-datepicker.css"
 import './styles.scss'
 
@@ -68,6 +67,7 @@ export const DateInput = ({className, defaultDate, handleChange, helpText, id, l
   <>
   <label htmlFor={id}>{label}</label>
   <DatePicker
+      ariaDescribedBy={helpText && `desc-${id}`}
       className={className || 'dp__wrapper'}
       selected={startDate}
       showTimeSelect='true'
@@ -76,7 +76,7 @@ export const DateInput = ({className, defaultDate, handleChange, helpText, id, l
       id={id}
       {...props}>
   </DatePicker>
-  {helpText && <p className='input__help-text' aria-describedby={`desc-${id}`}>{helpText}</p>}
+  {helpText && <p className='input__help-text' id={`desc-${id}`}>{helpText}</p>}
   </>
 )}
 
