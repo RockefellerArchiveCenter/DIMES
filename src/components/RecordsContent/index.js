@@ -179,7 +179,9 @@ export const RecordsChild = props => {
       if (targetIsDirectDescendant) { /* 1 */
         getInitialSiblings(itemUri, params)
       } else { /* 2 */
-        getPages(appendParams(itemUri, {...params, limit: pageSize}))
+        if (!children.length) {
+          getPages(appendParams(itemUri, {...params, limit: pageSize, offset: 0}))
+        }
       }
     }
   }, [isParentCollection, itemUri, params, targetIsDirectDescendant])
