@@ -11,6 +11,10 @@ module.exports = async (page, scenario, vp, isReference) => {
   
   await page.setRequestInterception(true);
 
+  page.evaluateOnNewDocument((valueToBeStoraged) => {
+    localStorage.setItem("DIMESMyList", valueToBeStoraged);
+  }, '["/objects/W9jBzNTBe4TuGzT8FTyoZQ","/objects/CkZSRtr48Es4MkLLNQ6s2y","/objects/GiKd8HrQCVvXsYLd5Lposp"]');
+
   page.on("request", req => {
     const fixturePath = createFilepath(scenario.label, req.url(), req.method())
     if (req.method() === 'OPTIONS') {
