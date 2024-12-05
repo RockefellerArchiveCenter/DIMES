@@ -55,6 +55,7 @@
       "label": "Requesting Unavailable Modal",
       "url": "http://host.docker.internal:3000/list",
       "clickSelector": "#main > div.mylist__export-actions > button:nth-child(1)",
+      "onBeforeScript": "mock_request.js",
       "delay": 1000,
       "viewports": [
         {
@@ -92,6 +93,7 @@
       "label": "Remove All Items Modal",
       "url": "http://host.docker.internal:3000/list",
       "clickSelector": "#main > div.mylist__export-actions > button:nth-child(3)",
+      "onBeforeScript": "mock_request.js",
       "delay": 1000,
       "viewports": [
         {
