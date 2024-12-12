@@ -7,7 +7,7 @@ import '../Button/styles.scss'
 import classnames from 'classnames'
 import './styles.scss'
 
-const DropdownItem = (props) => (
+export const DropdownItem = (props) => (
   <a
     key={props.order}
     id={`menu-item-${props.order}`}
@@ -21,7 +21,7 @@ const DropdownItem = (props) => (
   </a>
 )
 
-const Dropdown = (props) => {
+export const Dropdown = (props) => {
   const [className] = useState(props.className)
   const [iconBefore] = useState(props.iconBefore)
   const [iconBeforeOpen] = useState(props.iconBeforeOpen)
